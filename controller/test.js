@@ -1,13 +1,10 @@
 /**
  * 
  */
-const Controller = require("../index").Controller;
 
-class testController extends Controller {
-
-    home() {
-        console.log("home");
-    }
-
-}
-module.exports = testController;
+module.exports = function (router) {
+    router.get("/", function (ctx) {
+        ctx.body = "test";
+    });
+    return router;
+};
