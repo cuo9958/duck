@@ -11,10 +11,6 @@ const Controller = require("./lib/controller");
 
 module.exports = {
     /**
-     * 全局对象
-     */
-    app: app,
-    /**
      * 配置
      */
     config: function (name) {
