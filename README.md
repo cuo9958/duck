@@ -1,6 +1,12 @@
 # duck
 koa2内核的web框架
 
+## 安装
+
+`npm i --save node-duck`
+
+## 文件目录
+
 ```javascript
 - config //配置文件
     - default.js    //默认配置
