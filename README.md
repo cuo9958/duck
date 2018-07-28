@@ -17,4 +17,9 @@ koa2内核的web框架
 - schedule  //定时任务文件
     - test.js   //自定义定时任务
 - app.js    //自定义启动文件
+- index.js  //启动文件,引用duck即可
 ```
+
+## 查看例子
+
+[duck-example](https://github.com/cuo9958/duck-example)

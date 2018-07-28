@@ -1,6 +1,6 @@
 {
   "name": "node-duck",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "koa2内核的web框架",
   "main": "./lib/index.js",
   "scripts": {
