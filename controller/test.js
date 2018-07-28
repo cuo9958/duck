@@ -2,7 +2,7 @@
  * 测试路由
  */
 const Duck = require("../index");
-const Controller=new Duck.Controller("/");
+const Controller = new Duck.Controller("/");
 
 Controller.get("", function (ctx) {
     ctx.body = "test";
