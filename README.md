@@ -7,6 +7,8 @@ koa2内核的web框架
 
 ## 文件目录
 
+根目录下的`index.js`主要是为了启动duck,其他文件可以选择性新建.
+
 ```javascript
 - config //配置文件
     - default.js    //默认配置
@@ -23,6 +25,27 @@ koa2内核的web框架
 ## 查看例子
 
 [duck-example](https://github.com/cuo9958/duck-example)
+
+## 控制器
+
+1. 在根目录下新建`controller`文件夹
+2. 引入`Controller`并设置对应的路由
+3. 路由支持大多数http协议.`get/post/pu/del/all`
+
+```javascript
+const Duck = require("node-duck");
+//初始化控制器并设置控制器的前置路由
+const Controller=new Duck.Controller("/");
+//get方法路由
+Controller.get("", function (ctx) {
+    ctx.body = "test";
+})
+//get路由2
+Controller.get("test", function (ctx) {
+    ctx.body = "t1est";
+})
+module.exports = Controller;
+```
 
 ## 定时任务
 
