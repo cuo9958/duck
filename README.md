@@ -23,3 +23,26 @@ koa2内核的web框架
 ## 查看例子
 
 [duck-example](https://github.com/cuo9958/duck-example)
+
+## 定时任务
+
+1. 在根目录下新建`schedule`文件夹
+2. 新建任务文件,应用`Schedule`类并初始化自己的任务
+
+```javascript
+const Schedule = require("node-duck").Schedule;
+
+class testSchedule extends Schedule {
+
+    constructor() {
+        super();
+        //设置任务执行间隔
+        this.time = "*/1 * * * * *";
+    }
+    //设置任务执行内容
+    start() {
+        console.log("执行一次", Date.now());
+    }
+}
+module.exports = testSchedule;
+```
