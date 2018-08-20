@@ -18,6 +18,8 @@ koa2内核的web框架
     - index.js  //自定义路由地址
 - schedule  //定时任务文件
     - test.js   //自定义定时任务
+- models
+    - index.js  //自定义model加载
 - app.js    //自定义启动文件
 - index.js  //启动文件,引用duck即可
 ```
@@ -25,6 +27,17 @@ koa2内核的web框架
 ## 查看例子
 
 [duck-example](https://github.com/cuo9958/duck-example)
+
+## 对象层
+
+1. 这一层是专门针对数据库的对象设计的
+2. 比如使用`sequelize`的时候可以添加一个model对象,放在这个地方就可以了
+
+```javascript
+const Models = require("node-duck").Models;
+
+let User=Models.User;
+```
 
 ## 控制器
 
